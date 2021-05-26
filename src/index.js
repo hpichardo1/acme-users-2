@@ -18,16 +18,17 @@ userList.innerHTML = users.map( (obj, idx) =>
   window.addEventListener('hashchange', ()=>{
     const locationId = window.location.hash
 
-    const user = document.getElementById(locationId.slice(1))
-    user.innerHTML = users.map( (obj) => 
-    `<li > ${obj.}</li>`).join(''))
+    // Anothers approach. think how to implement
+    // const user = document.getElementById(locationId.slice(1))
+    // user.innerHTML = users.map( (obj) => 
+    // `<li > ${obj.}</li>`).join(''))
 })
 
 
 
 
-
-// John's input shoule be added in between line 9 and 13
+// LAST STEP: ADDING DETAILS AFTER CLICKING EACH USER
+// Final input below shoule be added in between line 9 and 13
 
 // window.addEventListener('hashchange', () => {
 //   const id = parseInt(window.location.hash.slice(1));
